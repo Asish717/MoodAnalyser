@@ -5,11 +5,18 @@ public class MoodAnalyser {
         if (message==null||message.isEmpty()){
             return "Its empty!!";
         }
-        else if (message.contains("happy")||message.contains("Happy")){
-            return "Happy";
+        else if (message.contains("Sad")){
+            return "SAD";
         }
         else {
-            return "SAD";
+            return "HAPPY";
         }
     }
 }
+//Given “I am in Any
+//        Mood” message
+//        Should Return HAPPY
+//
+//        To make the Test case pass
+//        analyseMood method need to check
+//        for Sad else return HAPPY
