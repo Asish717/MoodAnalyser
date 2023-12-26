@@ -1,7 +1,11 @@
 package com.java;
 
 public class MoodAnalyser {
-    public String mood(String message){
+    public String message;
+    public MoodAnalyser(String message){
+        this.message=message;
+    }
+    public String mood(){
         if (message==null||message.isEmpty()){
             return "Its empty!!";
         }
@@ -13,10 +17,3 @@ public class MoodAnalyser {
         }
     }
 }
-//Given “I am in Any
-//        Mood” message
-//        Should Return HAPPY
-//
-//        To make the Test case pass
-//        analyseMood method need to check
-//        for Sad else return HAPPY
